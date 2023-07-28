@@ -8,7 +8,7 @@ function isFriday() {
 function loadTypeformIfFriday() {
   if (isFriday()) {
     const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
+    script.src = 'embed.typeform.com/next/embed.js';
     document.head.appendChild(script);
   }
 }
