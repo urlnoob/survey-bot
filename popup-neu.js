@@ -5,5 +5,5 @@ function loadTypeform() {
   document.head.appendChild(script);
 }
 
-// Aufruf der Funktion, wenn die Seite und alle Ressourcen vollständig geladen sind
-window.onload = loadTypeform;
+// Aufruf der Funktion, um das Typeform-Widget direkt einzufügen
+loadTypeform();
