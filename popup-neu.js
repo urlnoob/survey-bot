@@ -1,7 +1,7 @@
 // Funktion zum Prüfen, ob der aktuelle Tag Montag ist
 function isMonday() {
   const today = new Date();
-  return today.getDay() === 5; // Montag ist 1 (Sonntag ist 0, Dienstag ist 2, ...), da getDay() Werte von 0 bis 6 zurückgibt.
+  return today.getDay() === 1; // Montag ist 1 (Sonntag ist 0, Dienstag ist 2, ...), da getDay() Werte von 0 bis 6 zurückgibt.
 }
 
 // Funktion zum Laden des Typeform-Widgets, wenn heute Montag ist
@@ -28,5 +28,5 @@ function loadTypeformIfMonday() {
   }
 }
 
-// Aufruf der Funktion beim Laden der Seite
-document.addEventListener('DOMContentLoaded', loadTypeformIfMonday);
+// Aufruf der Funktion, wenn die Seite und alle Ressourcen vollständig geladen sind
+window.onload = loadTypeformIfMonday;
